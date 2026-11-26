@@ -15,4 +15,7 @@ sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
 sudo tailscale set --advertise-exit-node
 
 # pi-hole
+echo 'net.ipv4.ip_unprivileged_port_start=53' | sudo tee /etc/sysctl.d/99-podman-ports.conf
+sudo sysctl --system
 podman compose -f ./pihole.yaml up -d
+

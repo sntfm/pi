@@ -13,3 +13,5 @@ echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.d/99-tailscale
 sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
 sudo tailscale set --advertise-exit-node
 
+# pi-hole
+podman compose -f ./pihole.yaml up -d

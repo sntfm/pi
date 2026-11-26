@@ -2,7 +2,8 @@
 
 set -euo pipefail
 sudo apt-get update
-sudo apt-get install -y nano tmux podman curl
+sudo apt-get install -y curl nano tmux podman 
+sudo apt install podman-compose
 
 # tailscale
 curl -fsSL https://tailscale.com/install.sh | sh

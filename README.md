@@ -1,4 +1,4 @@
-Extensive list of self-hosted software [Awesome-Selhosted](https://github.com/awesome-selfhosted/)
+Extensive list of self-hosted software [Awesome-Selfhosted](https://github.com/awesome-selfhosted/).
 
 - Network & DNS:
   - ✅ [pi-hole](https://pi-hole.net/)

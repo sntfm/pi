@@ -1,3 +1,3 @@
-Self-hosted:
-- ✅ [pi-hole](https://pi-hole.net/)
-- ❌ [Other App](https://other.example.com) — Short description
+- Self-hosted:
+-- ✅ [pi-hole](https://pi-hole.net/)
+-- ❌ [Other App](https://other.example.com) — Short description

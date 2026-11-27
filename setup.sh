@@ -19,6 +19,8 @@ echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.d/99-tailscale
 sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
 sudo tailscale set --advertise-exit-node
 
+sudo tailscale serve --bg 3000
+
 # pi-hole
 echo 'net.ipv4.ip_unprivileged_port_start=53' | sudo tee /etc/sysctl.d/99-podman-ports.conf
 sudo sysctl --system

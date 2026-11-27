@@ -4,7 +4,7 @@
 - ❌ [Plane](https://developers.plane.so/self-hosting/overview#deployment-methods) - project management
 - ❌ [any-sunc-bundle](https://github.com/grishy/any-sync-bundle) - anytype community 
 - ❌ [any-sync](https://github.com/anyproto/any-sync-dockercompose) - anytype official
-- ✅ [linkwarden](https://github.com/linkwarden/linkwarden) + [floccus](https://floccus.org/) - bookmarks, sync firefox/safari with linkwarden
+- ✅ [linkwarden](https://github.com/linkwarden/linkwarden) + [floccus](https://floccus.org/) - bookmarks, sync firefox tabs with linkwarden
 
 #### Arr Stack
 - ❌ [lidarr](https://github.com/Lidarr/Lidarr) - music

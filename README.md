@@ -1,3 +1,1 @@
-| Name | Description | Deployed |
-|------|-------------|----------|
-|   [pi-hole](https://pi-hole.net/)   |             |    V     |
+- :white_check_mark: [pi-hole](https://pi-hole.net/)

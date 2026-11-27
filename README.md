@@ -1,6 +1,7 @@
 Self-hosted:
 - :white_check_mark: [pi-hole](https://pi-hole.net/) :x:
-|      |             |          |
-|------|-------------|----------|
-| [pi-hole](https://pi-hole.net/) | | ✅ |
+
+|   |   |   |
+|---|---|---|
+| [My App](https://myapp.example.com) | Short description | ✅ |
 | [Other App](https://other.example.com) | Short description | ❌ |

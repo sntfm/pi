@@ -15,7 +15,8 @@
 #### Network & DNS
 - ✅ [pi-hole](https://pi-hole.net/) - ad blocker, dns filtering
 - ❌ [pangolin](https://github.com/fosrl/pangolin) - expose services to the web
-- ❌ [NetBird](https://github.com/netbirdio/netbird) - 
+- ❌ [headscale](https://github.com/juanfont/headscale) - tailscale server
+- ❌ [NetBird](https://github.com/netbirdio/netbird) - tailscale alternative
 
 #### Misc
 - [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)

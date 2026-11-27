@@ -1,1 +1,29 @@
+services:
+  postgres:
+    image: docker.io/library/postgres:16-alpine
+    restart: always
+    env_file: .env
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
 
+  meilisearch:
+    image: docker.io/getmeili/meilisearch:v1.13.3
+    restart: always
+    env_file: .env
+    volumes:
+      - ./meili_data:/meili_data
+
+  linkwarden:
+    image: ghcr.io/linkwarden/linkwarden:latest
+    restart: always
+    env_file: .env
+    environment:
+      - DATABASE_URL=postgresql://postgres:${POSTGRES_PASSWORD}@postgres:5432/postgres
+      - MEILI_HOST=http://meilisearch:7700
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/data/data
+    depends_on:
+      - postgres
+      - meilisearch

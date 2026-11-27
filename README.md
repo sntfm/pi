@@ -2,9 +2,6 @@
 - ❌ [immich](https://github.com/immich-app/immich) - photo
 - ❌ [vaultwarden](https://github.com/dani-garcia/vaultwarden) - bitwarden server
 
-#### Network & DNS
-- ✅ [pi-hole](https://pi-hole.net/)
-
 #### Arr Stack
 - ❌ [lidarr](https://github.com/Lidarr/Lidarr) - music
 - ❌ [radarr](https://github.com/Radarr/Radarr) - movies
@@ -14,6 +11,9 @@
 - ❌ [prowlarr](https://github.com/Prowlarr/Prowlarr) - indexer
 - ❌ [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) - cloudflare bypass for prowlarr
 - ❌ [maintainerr](https://github.com/maintainerr/maintainerr) - library janitor
+
+#### Network & DNS
+- ✅ [pi-hole](https://pi-hole.net/)
 
 ---
 Extensive list of self-hosted software can be found at [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted).

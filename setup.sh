@@ -21,11 +21,11 @@ podman compose -f ./yaml/pihole.yaml up -d
 # linkwarden
 DIR=/opt/linkwarden
 SRC="$(cd "$(dirname "$0")" && pwd)"
- 
+
 mkdir -p "$DIR"
 cp "$SRC/yaml/linkwarden.yaml" "$DIR/"
 cd "$DIR"
- 
+
 # Create .env with random secrets on first run only
 if [[ ! -f .env ]]; then
   IP=$(hostname -I | awk '{print $1}')
@@ -37,9 +37,9 @@ MEILI_MASTER_KEY=$(openssl rand -hex 32)
 EOF
   chmod 600 .env
 fi
- 
+
 podman-compose -f linkwarden.yaml pull
 podman-compose -f linkwarden.yaml up -d
- 
+
 echo "Linkwarden is starting at http://$(hostname -I | awk '{print $1}'):3000"
 echo "Logs: cd $DIR && sudo podman-compose -f linkwarden.yaml logs -f"

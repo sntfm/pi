@@ -2,6 +2,8 @@ services:
   postgres:
     image: docker.io/library/postgres:16-alpine
     env_file: .env
+    network_mode: host
+    command: postgres -c listen_addresses=127.0.0.1
     restart: always
     volumes:
       - ./pgdata:/var/lib/postgresql/data:Z
@@ -9,6 +11,9 @@ services:
   meilisearch:
     image: docker.io/getmeili/meilisearch:v1.13.3
     env_file: .env
+    network_mode: host
+    environment:
+      - MEILI_HTTP_ADDR=127.0.0.1:7700
     restart: always
     volumes:
       - ./meili_data:/meili_data:Z
@@ -16,11 +21,11 @@ services:
   linkwarden:
     image: ghcr.io/linkwarden/linkwarden:latest
     env_file: .env
+    network_mode: host
     environment:
-      - DATABASE_URL=postgresql://postgres:${POSTGRES_PASSWORD}@postgres:5432/postgres
+      - DATABASE_URL=postgresql://postgres:${POSTGRES_PASSWORD}@127.0.0.1:5432/postgres
+      - MEILI_HOST=http://127.0.0.1:7700
     restart: always
-    ports:
-      - "3000:3000"
     volumes:
       - ./data:/data/data:Z
     depends_on:

@@ -1,3 +1,6 @@
+#### General
+- ❌ 
+
 #### Network & DNS
 - ✅ [pi-hole](https://pi-hole.net/)
 

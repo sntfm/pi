@@ -4,6 +4,12 @@ set -euo pipefail
 sudo apt-get update
 sudo apt-get install -y curl nano tmux podman podman-compose netavark aardvark-dns
 
+# keep your containers running after you log out
+sudo loginctl enable-linger $USER
+
+# start containers with a restart policy again on boot
+systemctl --user enable --now podman-restart.service
+
 # tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
 sudo tailscale up --ssh

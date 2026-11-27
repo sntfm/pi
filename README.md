@@ -4,5 +4,5 @@
 #### Arr Stack
 
 
-
+---
 Extensive list of self-hosted software can be found at [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted).

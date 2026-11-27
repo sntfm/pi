@@ -19,7 +19,7 @@ sudo sysctl --system
 podman compose -f ./yaml/pihole.yaml up -d
 
 # linkwarden
-DIR=/opt/linkwarden
+DIR=$HOME/linkwarden
 SRC="$(cd "$(dirname "$0")" && pwd)"
 
 mkdir -p "$DIR"

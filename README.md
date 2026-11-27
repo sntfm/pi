@@ -3,5 +3,5 @@ Self-hosted:
 
 | Name | Description | Deployed |
 |------|-------------|----------|
-| [My App](https://myapp.example.com) | Short description | ✅ |
+| [pi-hole](https://pi-hole.net/) | | ✅ |
 | [Other App](https://other.example.com) | Short description | ❌ |

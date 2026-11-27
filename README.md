@@ -5,7 +5,7 @@
 - ❌ [any-sunc-bundle](https://github.com/grishy/any-sync-bundle) - anytype community 
 - ❌ [any-sync](https://github.com/anyproto/any-sync-dockercompose) - anytype official
 - ✅ [linkwarden](https://github.com/linkwarden/linkwarden) - bookmarks
-- ✅ [floccus]
+- ✅ [floccus](https://floccus.org/) - sync firefox/safari with linkwarden
 
 #### Arr Stack
 - ❌ [lidarr](https://github.com/Lidarr/Lidarr) - music

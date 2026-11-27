@@ -1,5 +1,5 @@
 #### General
-- ❌ 
+- ❌ [immich](https://github.com/immich-app/immich) - photo
 
 #### Network & DNS
 - ✅ [pi-hole](https://pi-hole.net/)

@@ -4,7 +4,7 @@
 - ❌ [Plane](https://developers.plane.so/self-hosting/overview#deployment-methods) - project management
 - ❌ [any-sunc-bundle](https://github.com/grishy/any-sync-bundle) - anytype community 
 - ❌ [any-sync](https://github.com/anyproto/any-sync-dockercompose) - anytype official
-- ✅ [linkwarden]
+- ✅ [linkwarden](https://github.com/linkwarden/linkwarden) - bookmarks
 - ✅ [floccus]
 
 #### Arr Stack

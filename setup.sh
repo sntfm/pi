@@ -18,3 +18,28 @@ echo 'net.ipv4.ip_unprivileged_port_start=53' | sudo tee /etc/sysctl.d/99-podman
 sudo sysctl --system
 podman compose -f ./yaml/pihole.yaml up -d
 
+# linkwarden
+DIR=/opt/linkwarden
+SRC="$(cd "$(dirname "$0")" && pwd)"
+ 
+mkdir -p "$DIR"
+cp "$SRC/yaml/linkwarden.yaml" "$DIR/"
+cd "$DIR"
+ 
+# Create .env with random secrets on first run only
+if [[ ! -f .env ]]; then
+  IP=$(hostname -I | awk '{print $1}')
+  cat > .env <<EOF
+NEXTAUTH_URL=http://$IP:3000/api/v1/auth
+NEXTAUTH_SECRET=$(openssl rand -hex 32)
+POSTGRES_PASSWORD=$(openssl rand -hex 24)
+MEILI_MASTER_KEY=$(openssl rand -hex 32)
+EOF
+  chmod 600 .env
+fi
+ 
+podman-compose -f linkwarden.yaml pull
+podman-compose -f linkwarden.yaml up -d
+ 
+echo "Linkwarden is starting at http://$(hostname -I | awk '{print $1}'):3000"
+echo "Logs: cd $DIR && sudo podman-compose -f linkwarden.yaml logs -f"

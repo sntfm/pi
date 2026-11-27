@@ -8,6 +8,7 @@
 - ❌ [bazarr](https://github.com/morpheus65535/bazarr) - subtitles
 - ❌ [LazyLibrarian](https://gitlab.com/LazyLibrarian/LazyLibrarian) - books
 - ❌ [prowlarr](https://github.com/Prowlarr/Prowlarr) - indexer
+- ❌ [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) - cloudflare bypass for prowlarr
 - ❌ [maintainerr](https://github.com/maintainerr/maintainerr) - library janitor
 
 ---

@@ -1,5 +1,6 @@
 #### General
 - ❌ [immich](https://github.com/immich-app/immich) - photo
+- ❌ [vaultwarden](https://github.com/dani-garcia/vaultwarden) - bitwarden server
 
 #### Network & DNS
 - ✅ [pi-hole](https://pi-hole.net/)

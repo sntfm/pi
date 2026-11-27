@@ -13,7 +13,10 @@
 - ❌ [maintainerr](https://github.com/maintainerr/maintainerr) - library janitor
 
 #### Network & DNS
-- ✅ [pi-hole](https://pi-hole.net/)
+- ✅ [pi-hole](https://pi-hole.net/) - ad blocker, dns filtering
+- ❌ [pangolin](https://github.com/fosrl/pangolin) - expose services to the web
+- ❌ [NetBird](https://github.com/netbirdio/netbird) - 
 
----
-Extensive list of self-hosted software can be found at [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted).
+#### Misc
+- [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
+
